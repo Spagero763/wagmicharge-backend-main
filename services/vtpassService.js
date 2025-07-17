@@ -1,6 +1,4 @@
-// services/vtpassService.js
-
-import axios from 'axios';
+const axios = require('axios');
 
 /**
  * Calls the VTpass API to process an airtime purchase.
@@ -66,4 +64,4 @@ async function fulfillOrder(orderData) {
 
 // TODO: Add other VTpass related functions as needed
 
-export { processAirtime, processData, processTV, fulfillOrder };
+module.exports = { processAirtime, processData, processTV, fulfillOrder };
