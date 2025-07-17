@@ -1,16 +1,15 @@
 // app/index.js
-import dotenv from "dotenv";
-dotenv.config();
-import express from "express";
-import cors from "cors";
+require('dotenv').config();
+const express = require("express");
+const cors = require("cors");
 
 // routers - converted to ES module imports
-import airtimeRouter from "./api/airtime/route.js";
-import dataRouter from "./api/data/route.js";
-import tvRouter from "./api/tv/route.js";
+const airtimeRouter = require("./api/airtime/route.js");
+const dataRouter = require("./api/data/route.js");
+const tvRouter = require("./api/tv/route.js");
 
 // connect database - converted to ES module import
-import connectDB from "../db/index.js";
+const connectDB = require("../db/index.js");
 
 const app = express();
 app.use(cors());
