@@ -1,0 +1,22 @@
+{
+  "name": "wagmicharge-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "app/index.js",
+  "scripts": {
+    "dev": "nodemon app/index.js",
+    "build": "npm install",
+    "start": "node app/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "cors": "^2.8.5",
+    "mongoose": "^8.0.0",
+    "mongodb": "^6.17.0",
+    "axios": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
